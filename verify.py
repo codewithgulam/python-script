@@ -1,3 +1,5 @@
+#https://bteup.ac.in/AdmitCardVerificationCard/VerificationCard/2230/E19223035500018.pdf
+
 import wget
 
 def download(url, filename):
@@ -24,13 +26,13 @@ choice = 1
 
 while choice :
     print("Download single or multiple results?")
-    print("1. Single Admit Card\n2. Multiple Admit Card")
+    print("1. Single Verification Card\n2. Multiple Verification Card")
     choice = int(input("3. Exit\n"))
     
     if choice == 1 :
         ccode = input("\n\nEnter college code :: ")
         enum = input("\n\nEnter enrollment number:: ")
-        url = "https://bteup.ac.in/AdmitCardVerificationCard/AdmitCard/"+ccode+"/"+enum+".pdf"
+        url = "https://bteup.ac.in/AdmitCardVerificationCard/VerificationCard/"+ccode+"/"+enum+".pdf"
         filename = enum+".pdf"
         download(url,filename)
     
@@ -47,8 +49,8 @@ while choice :
             enum = upenum[:1:]
             i = f'{i}'
             enum = enum + i
-            url = "https://bteup.ac.in/AdmitCardVerificationCard/AdmitCard/"+ccode+"/"+enum+".pdf"
-            filename = enum+".pdf"
+            url = "https://bteup.ac.in/AdmitCardVerificationCard/VerificationCard/"+ccode+"/"+enum+".pdf"
+            filename = "VerificationOf"+enum+".pdf"
             download(url,filename)
     
     else :

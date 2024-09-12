@@ -15,8 +15,10 @@ cd python-script
 
 ## install the necessary modules
 ```
-pip install wget html2image
+pip install wget html2image pyttsx3
 ```
+
+`Note: speak.py and result.py not supported in Android and speak.py is highly unstable`
 
 ## run the code 
 - for admit card 
@@ -24,9 +26,14 @@ pip install wget html2image
 python admit.py
 ```
 
+- for verification card 
+```
+python verify.py
+```
+
 - for results 
 ```
 python result.py
 ```
 
-star the respiratory and contribute if have something to suggest!
+star and [fork](https://github.com/Mr-vabs/python-script/fork) this repository, and contribute if have something to suggest!
